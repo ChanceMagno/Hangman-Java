@@ -17,4 +17,8 @@ import java.util.List;
     public String getUserInput() {
       return mUserInput;
     }
+
+    public boolean goodInput(){
+      return mAnswer.contains(mUserInput);
+    }
 }

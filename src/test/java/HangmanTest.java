@@ -1,5 +1,6 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import java.lang.*;
 
 public class HangmanTest {
 
@@ -19,5 +20,11 @@ public class HangmanTest {
   public void newHangman_getLetterFromUser_true() {
     Hangman testHangman = new Hangman("coding", "c");
     assertEquals("c", testHangman.getUserInput());
+  }
+
+  @Test
+  public void newHangman_compareLetterToAnswer_true() {
+    Hangman testHangman = new Hangman("coding", "c");
+    assertEquals(true, testHangman.goodInput());
   }
 }
